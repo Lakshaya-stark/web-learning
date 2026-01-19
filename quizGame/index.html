@@ -15,11 +15,44 @@
   </head>
   <body>
     <div class="container">
-      <div class="first" id="start">
+      <div class="first screen" id="start">
         <h2>QUIZ TIME!</h2>
-        <h3>Test Your Knowledge with these fun questions</h3>
+        <p>Test Your Knowledge with these fun questions</p>
         <button>Start Quiz</button>
       </div>
+
+      <div class="quiz-screen screen active" id="quiz">
+        <div class="quiz-header">
+          <div class="question">Question Goes Here</div>
+          <div class="quiz-info">
+            <p>
+              Question <span id="q-number">1</span> of
+              <span class="total-question">10</span>
+            </p>
+            <p>Score: <span id="current-score">0</span></p>
+          </div>
+        </div>
+        <div id="answer-container" class="answer-container answer-btn">
+          <!-- Answer Buttons from JS -->
+          .answer-btn
+        </div>
+        <div class="progres-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+      <div id="result" class="result screen">
+        <h2>Quiz Results</h2>
+        <div class="result-info">
+          <p>
+            You Scored <span id="current-score">0</span> out of
+            <span id="t-score">10</span>
+          </p>
+          <h3>Keep Studing : &rbrack;</h3>
+        </div>
+        <button>Restart Quiz</button>
+      </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
